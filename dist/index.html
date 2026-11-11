@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#512c80"><title>Tres mil · Spanish number practice</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><a class="brand" href="./"><span class="brand-icon" aria-hidden="true">3k</span> tres mil<span class="brand-dot">.</span></a><span class="header-note">A little practice. A lot of possibility.</span></header>
+<main>
+<section class="intro"><p class="eyebrow">YOUR SPANISH NUMBER STUDIO</p><h1>Make every<br> <em>number count.</em></h1><p>From cero to tres mil. See a number, write it in Spanish, and build confidence one answer at a time.</p><div class="independent"><span aria-hidden="true">✦</span> Separate practice · No vocabulary cards added</div></section>
+<section class="studio" aria-label="Number practice">
+<div class="studio-top"><span class="live-dot" aria-hidden="true"></span><span id="mode-label">RANDOM PRACTICE</span><span class="range-tag" id="range-label">0 — 3,000</span></div>
+<div class="question"><span class="small-label">WRITE THIS NUMBER IN SPANISH</span><h2 id="number">—</h2><p id="question-hint">Take your time. There’s no clock.</p></div>
+<form id="answer-form"><label for="answer">Your answer</label><input id="answer" name="answer" placeholder="Write the number in Spanish…" autocomplete="off" autocapitalize="none" spellcheck="false" required aria-describedby="feedback"><div class="input-bottom"><div class="accent-keys" aria-label="Insert accented letter"><button type="button" data-accent="á">á</button><button type="button" data-accent="é">é</button><button type="button" data-accent="í">í</button><button type="button" data-accent="ó">ó</button><button type="button" data-accent="ú">ú</button></div><span class="enter-hint">Enter ↵ to continue</span></div><div id="feedback" class="feedback" role="status" aria-live="polite"></div><button id="submit" class="primary" type="submit">Check answer <span aria-hidden="true">→</span></button></form>
+<div class="session-stats"><div><strong id="attempted">0</strong><span>checked</span></div><div><strong id="correct">0</strong><span>correct</span></div><div><strong id="streak">0</strong><span>current streak</span></div></div>
+</section>
+<section class="practice-tools"><div class="tool"><label for="range">Choose your range</label><select id="range"><option value="0,3000">The whole range · 0–3,000</option><option value="0,99">Start small · 0–99</option><option value="100,999">Hundreds · 100–999</option><option value="1000,3000">Thousands · 1,000–3,000</option></select></div><div class="tool review-tool"><div><span class="tool-title">Give tricky numbers another go</span><p><span id="miss-count">0</span> numbers to revisit</p></div><button id="review" class="secondary" type="button" disabled>Review misses</button></div></section>
+<section class="notes"><div><span class="note-mark" aria-hidden="true">Aa</span><p><strong>Spelling is part of the practice.</strong> Capitalization and extra spaces are ignored. Accents count, with a gentle nudge when that’s the only issue.</p></div><div><span class="note-mark" aria-hidden="true">↺</span><p><strong>Misses are saved on this browser.</strong> Get one right in review to clear it. Session counts restart when you reload.</p></div></section>
+<footer><span>POCO A POCO, NÚMERO A NÚMERO.</span><button id="clear" type="button">Clear saved misses</button></footer><p id="storage-note" role="status"></p>
+</main><script type="module" src="app.js"></script>
+</body></html>
